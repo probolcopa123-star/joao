@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Información Deportiva - Provincia Bolívar</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            min-height: 100%;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: black;
+        }
+
+        .encabezado {
+            background-color: #800020;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        .encabezado h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .encabezado p {
+            margin-top: 10px;
+            font-size: 19px;
+        }
+
+        .contenido {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            padding: 25px 0 40px;
+        }
+
+        .titulo {
+            color: #800020;
+            font-size: 28px;
+            border-bottom: 3px solid #800020;
+            padding-bottom: 8px;
+            margin-top: 30px;
+        }
+
+        .caja {
+            background-color: #f5f5f5;
+            border-left: 6px solid #800020;
+            padding: 20px;
+            margin: 20px 0;
+            line-height: 1.7;
+        }
+
+        .deportes {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .deporte {
+            border: 3px solid #800020;
+            padding: 25px;
+            text-align: center;
+            background-color: white;
+        }
+
+        .deporte h3 {
+            color: #800020;
+            font-size: 25px;
+            margin-top: 0;
+        }
+
+        .deporte p {
+            line-height: 1.6;
+        }
+
+        .olimpiadas {
+            background-color: #f5f5f5;
+            border: 3px solid #800020;
+            padding: 25px;
+            margin-top: 20px;
+            line-height: 1.7;
+        }
+
+        .olimpiadas h3 {
+            color: #800020;
+            font-size: 26px;
+            margin-top: 0;
+        }
+
+        .copa {
+            background-color: #800020;
+            color: white;
+            padding: 30px;
+            margin-top: 20px;
+            line-height: 1.7;
+        }
+
+        .copa h3 {
+            margin-top: 0;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .datos-copa {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .dato-copa {
+            background-color: white;
+            color: black;
+            padding: 18px;
+            border-left: 5px solid #800020;
+        }
+
+        .dato-copa strong {
+            color: #800020;
+        }
+
+        .categorias {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .categoria {
+            background-color: white;
+            color: black;
+            border: 3px solid #800020;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .categoria h4 {
+            color: #800020;
+            font-size: 23px;
+            margin-top: 0;
+        }
+
+        .reglas {
+            background-color: white;
+            color: black;
+            padding: 20px;
+            margin-top: 20px;
+            border-left: 5px solid #800020;
+        }
+
+        .moderador {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .boton {
+            display: inline-block;
+            background-color: white;
+            color: #800020;
+            text-decoration: none;
+            padding: 14px 25px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .boton:hover {
+            background-color: #eeeeee;
+        }
+
+        .volver {
+            text-align: center;
+            margin-top: 35px;
+        }
+
+        .volver a {
+            display: inline-block;
+            background-color: #800020;
+            color: white;
+            text-decoration: none;
+            padding: 15px 25px;
+            font-weight: bold;
+        }
+
+        .pie {
+            background-color: #800020;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 30px;
+        }
+
+        .pie strong {
+            font-size: 25px;
+        }
+
+        @media (max-width: 700px) {
+
+            .deportes {
+                grid-template-columns: 1fr;
+            }
+
+            .datos-copa {
+                grid-template-columns: 1fr;
+            }
+
+            .categorias {
+                grid-template-columns: 1fr;
+            }
+
+            .encabezado h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="encabezado">
+
+        <h1>
+            INFORMACIÓN DEPORTIVA
+        </h1>
+
+        <p>
+            Unidad Educativa Fiscal Provincia Bolívar
+        </p>
+
+    </div>
+
+
+    <div class="contenido">
+
+        <h2 class="titulo">
+            Deportes en la Institución
+        </h2>
+
+        <div class="caja">
+
+            <p>
+                La <strong>Unidad Educativa Fiscal Provincia Bolívar</strong>
+                promueve la participación de los estudiantes en diferentes
+                actividades deportivas como parte de la vida estudiantil.
+            </p>
+
+            <p>
+                El deporte permite fomentar el compañerismo, el respeto,
+                la responsabilidad, la disciplina y el trabajo en equipo.
+            </p>
+
+        </div>
+
+
+        <h2 class="titulo">
+            Disciplinas Deportivas
+        </h2>
+
+        <div class="deportes">
+
+            <div class="deporte">
+
+                <h3>FÚTBOL</h3>
+
+                <p>
+                    El fútbol es una de las principales actividades deportivas
+                    de la institución.
+                </p>
+
+                <p>
+                    Los estudiantes participan en diferentes encuentros
+                    y competencias deportivas.
+                </p>
+
+            </div>
+
+
+            <div class="deporte">
+
+                <h3>VÓLEY</h3>
+
+                <p>
+                    El vóley es una disciplina deportiva que se proyecta
+                    incorporar dentro de las actividades de participación
+                    estudiantil.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <h2 class="titulo">
+            Olimpiadas
+        </h2>
+
+        <div class="olimpiadas">
+
+            <h3>
+                OLIMPIADAS PROVINCIA BOLÍVAR
+            </h3>
+
+            <p>
+                Las <strong>Olimpiadas</strong> son actividades deportivas
+                institucionales que permiten la participación de los
+                estudiantes en diferentes encuentros y competencias.
+            </p>
+
+            <p>
+                Estas actividades buscan fortalecer la convivencia,
+                el compañerismo, el respeto y la participación dentro
+                de la comunidad educativa.
+            </p>
+
+            <p>
+                En este espacio se podrán incorporar posteriormente
+                las diferentes actividades, disciplinas y fechas
+                correspondientes a las Olimpiadas.
+            </p>
+<div style="text-align: center;">
+  <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ8hniaixudwq-3nxQiIKLMRUdhSZMl9nEOcwejhY32A&s=10)" target="_blank">
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ8hniaixudwq-3nxQiIKLMRUdhSZMl9nEOcwejhY32A&s=10"
+      alt="Descripción de la imagen"
+      width="300"
+    >
+  </a>
+</div>
+
+        </div>
+
+
+        <h2 class="titulo">
+            Copa Probol
+        </h2>
+
+        <div class="copa">
+
+            <h3>
+                COPA PROBOL
+            </h3>
+
+            <p>
+                La <strong>Copa Probol</strong> es un torneo de fútbol
+                destinado a la participación de los estudiantes de la
+                Unidad Educativa Fiscal Provincia Bolívar.
+            </p>
+
+            <div class="datos-copa">
+
+                <div class="dato-copa">
+                    <strong>Fecha de inicio:</strong>
+                    <br>
+                    28 de septiembre de 2026
+                </div>
+
+                <div class="dato-copa">
+                    <strong>Deporte:</strong>
+                    <br>
+                    Fútbol
+                </div>
+
+                <div class="dato-copa">
+                    <strong>Jugadores:</strong>
+                    <br>
+                    6 jugadores por equipo, incluido el arquero
+                </div>
+
+                <div class="dato-copa">
+                    <strong>Participación:</strong>
+                    <br>
+                    Masculina y femenina
+                </div>
+
+            </div>
+
+
+            <h3 style="text-align:left; margin-top:35px;">
+                Categorías
+            </h3>
+
+            <div class="categorias">
+
+                <div class="categoria">
+
+                    <h4>
+                        BÁSICA SUPERIOR
+                    </h4>
+
+                    <p>
+                        Participan estudiantes de
+                        <strong>8.º, 9.º y 10.º</strong>
+                        de Educación General Básica.
+                    </p>
+
+                    <p>
+                        Categoría masculina y femenina.
+                    </p>
+
+                </div>
+
+
+                <div class="categoria">
+
+                    <h4>
+                        BACHILLERATO
+                    </h4>
+
+                    <p>
+                        Participan estudiantes de
+                        <strong>1.º, 2.º y 3.º</strong>
+                        de Bachillerato.
+                    </p>
+
+                    <p>
+                        Categoría masculina y femenina.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <h3 style="text-align:left; margin-top:35px;">
+                Reglamento
+            </h3>
+
+            <div class="reglas">
+
+                <p>
+                    La Copa Probol se desarrolla bajo reglas estándar
+                    de fútbol.
+                </p>
+
+                <ul>
+
+                    <li>
+                        Cada equipo está conformado por 6 jugadores.
+                    </li>
+
+                    <li>
+                        El arquero forma parte de los 6 jugadores.
+                    </li>
+
+                    <li>
+                        Existen categorías de Básica Superior y Bachillerato.
+                    </li>
+
+                    <li>
+                        La competencia cuenta con participación masculina
+                        y femenina.
+                    </li>
+
+                    <li>
+                        Los participantes deben respetar las reglas y
+                        mantener una conducta deportiva.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="moderador">
+
+                <p>
+                    Gestión y moderación de la Copa Probol:
+                </p>
+
+                <a
+                    href="https://copafacil.com/moderator_link/-5zdtp/-P1R9XBESmKrbZyTjP2m"
+                    target="_blank"
+                    class="boton"
+                >
+                    ACCESO A COPA PROBOL
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <h2 class="titulo">
+            Participación Deportiva
+        </h2>
+
+        <div class="caja">
+
+            <p>
+                Las actividades deportivas permiten que los estudiantes
+                participen en espacios de convivencia y desarrollen
+                valores relacionados con el respeto, la responsabilidad
+                y el trabajo en equipo.
+            </p>
+
+            <ul>
+
+                <li>Trabajo en equipo</li>
+                <li>Respeto</li>
+                <li>Disciplina</li>
+                <li>Responsabilidad</li>
+                <li>Compañerismo</li>
+                <li>Participación estudiantil</li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="volver">
+
+            <a href="frames.html" target="_self">
+                VOLVER A LA PÁGINA PRINCIPAL
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="pie">
+
+        <strong>PB</strong>
+
+        <br><br>
+
+        Unidad Educativa Fiscal Provincia Bolívar
+
+        <br>
+
+        Guayaquil - Ecuador
+
+    </div>
+
+</body>
+
+</html>

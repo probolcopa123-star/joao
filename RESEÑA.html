@@ -1,0 +1,308 @@
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reseñas de canciones - Eurobloque</title>
+
+    <style>
+        
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            color: #263238;
+            background-color: #101321;
+        }
+
+        .fondos {
+            position: fixed;
+            inset: 0;
+            z-index: -2;
+            overflow: hidden;
+        }
+
+        .fondo {
+            position: absolute;
+            inset: 0;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0;
+            animation: cambiarFondo 15s infinite;
+        }
+
+        /* Imagen 1 */
+        .fondo1 {
+            background-image: url("https://th.bing.com/th?id=OIF.HsPRPifuqCPcoxPQ%2fgk%2fcg&w=132&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3");
+            animation-delay: 0s;
+        }
+
+        /* Imagen 2 */
+        .fondo2 {
+            background-image: url("https://th.bing.com/th/id/OIP.bFx1nJK6uJ-La4f8sIE9FAHaHa?w=147&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3");
+            animation-delay: 0s;
+        }
+
+        /* Imagen 3 */
+        .fondo3 {
+            background-image: url("https://th.bing.com/th/id/OIP.JyYvI9_pHm1qHr_EXjV3FAHaHa?w=150&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3");
+            animation-delay: 0s;
+        }
+
+        /* Secuencia de 15 segundos:
+           cada imagen tiene su turno de 5 segundos */
+        @keyframes cambiarFondo {
+            0%   { opacity: 1; }
+            27%  { opacity: 1; }
+            33%  { opacity: 0; }
+            93%  { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .fondo1 {
+            animation-name: fondoUno;
+        }
+
+        .fondo2 {
+            animation-name: fondoDos;
+        }
+
+        .fondo3 {
+            animation-name: fondoTres;
+        }
+
+        @keyframes fondoUno {
+            0%, 27%   { opacity: 1; }
+            33%, 93%   { opacity: 0; }
+            100%       { opacity: 1; }
+        }
+
+        @keyframes fondoDos {
+            0%, 27%    { opacity: 0; }
+            33%, 60%    { opacity: 1; }
+            67%, 100%   { opacity: 0; }
+        }
+
+        @keyframes fondoTres {
+            0%, 60%     { opacity: 0; }
+            67%, 93%     { opacity: 1; }
+            100%         { opacity: 0; }
+        }
+
+        /* Capa oscura para facilitar la lectura */
+        .capa {
+            position: fixed;
+            inset: 0;
+            background: rgba(10, 12, 25, 0.55);
+            z-index: -1;
+        }
+
+        /* ===== CONTENIDO ===== */
+        header {
+            background-color: #172554;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .contenido {
+            max-width: 950px;
+            margin: auto;
+        }
+
+        .cancion {
+            background-color: rgba(255, 255, 255, 0.94);
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.25);
+        }
+
+        h2 {
+            color: #172554;
+            text-align: center;
+        }
+
+        h3 {
+            color: #334155;
+            text-align: center;
+        }
+
+        p {
+            line-height: 1.7;
+            text-align: justify;
+        }
+
+        .fotos {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .fotos img {
+            width: 220px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        audio {
+            display: block;
+            margin: 15px auto;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #172554;
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 25px;
+        }
+
+        .boton {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #6474c9;
+            color: white;
+            padding: 12px 22px;
+            border-radius: 10px;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+
+        .boton:hover {
+            background-color: #3949ab;
+            transform: scale(1.05);
+        }
+
+        /* Ajuste para celulares */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .cancion {
+                padding: 15px;
+            }
+
+            .fotos img {
+                width: 100%;
+                max-width: 280px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Fondos -->
+    <div class="fondos">
+        <div class="fondo fondo1"></div>
+        <div class="fondo fondo2"></div>
+        <div class="fondo fondo3"></div>
+    </div>
+
+    <div class="capa"></div>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Reseñas de canciones - Eurobloque</h1>
+    </header>
+
+    <main class="contenido">
+
+        <!-- CANCIÓN 1 -->
+        <section class="cancion">
+            <h2>Disciplina y amor propio</h2>
+
+            <h3>Reseña</h3>
+
+            <p>
+                Esta canción transmite un mensaje relacionado con el esfuerzo
+                personal, la confianza y la importancia de aprender a valorarse.
+                Su contenido invita a reflexionar sobre las decisiones que
+                tomamos y cómo estas pueden influir en nuestro crecimiento.
+                También resalta que tener disciplina permite avanzar y superar
+                dificultades, incluso cuando las cosas no salen como esperamos.
+            </p>
+
+            <h3>LETRA DE LA CANCIÓN</h3>
+
+            <!-- Coloca aquí la letra que tenías originalmente -->
+
+            <div class="fotos">
+                <img src="foto1.JPEG" alt="Foto 1">
+                <img src="foto2.JPEG" alt="Foto 2">
+                <img src="foto3.JPEG" alt="Foto 3">
+                <img src="foto4.JPEG" alt="Foto 4">
+            </div>
+
+            <audio controls>
+                <source src="musica1.mp3" type="audio/mpeg">
+                Tu navegador no soporta audio.
+            </audio>
+        </section>
+
+        <!-- CANCIÓN 2 -->
+        <section class="cancion">
+            <h2>Se perdieron los códigos</h2>
+
+            <h3>Reseña</h3>
+
+            <p>
+                Esta canción invita a pensar en los cambios que se producen
+                en la sociedad y en la manera en que las personas se relacionan.
+                Su mensaje puede interpretarse como una crítica a la pérdida
+                de valores, al respeto y a ciertas actitudes que antes tenían
+                mayor importancia. A través de su contenido, nos anima a
+                cuestionar lo que ocurre a nuestro alrededor y a analizar
+                nuestras propias acciones.
+            </p>
+
+            <h3>LETRA DE LA CANCIÓN</h3>
+
+            <!-- Coloca aquí la letra que tenías originalmente -->
+
+            <div class="fotos">
+                <img src="foto5.JPEG" alt="Foto 5">
+                <img src="foto6.JPEG" alt="Foto 6">
+                <img src="foto7.JPEG" alt="Foto 7">
+            </div>
+
+            <audio controls>
+                <source src="musica2.mp3" type="audio/mpeg">
+                Tu navegador no soporta audio.
+            </audio>
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Proyecto Eurobloque</p>
+
+        <a href="frames.html" class="boton">
+            Volver a la página principal
+        </a>
+    </footer>
+
+</body>
+</html>
+```

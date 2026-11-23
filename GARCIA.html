@@ -1,0 +1,326 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eurobloque | Universo Musical</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 25px;
+            background: #101323;
+            color: #e8e9f5;
+        }
+
+        header {
+            background: linear-gradient(135deg, #292c54, #7444a8, #202544);
+            text-align: center;
+            padding: 55px 20px;
+            border-radius: 25px;
+            border: 1px solid #8b78d6;
+        }
+
+        header h1 {
+            font-size: 42px;
+            letter-spacing: 8px;
+            margin: 0;
+            color: white;
+        }
+
+        header p {
+            color: #d9d0ff;
+            font-size: 17px;
+        }
+
+        .contenedor {
+            max-width: 950px;
+            margin: 35px auto;
+        }
+
+        .cancion {
+            background-color: #1b1e33;
+            margin-bottom: 35px;
+            padding: 30px;
+            border-radius: 22px;
+            border: 1px solid #393d61;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+        }
+
+        .numero {
+            color: #a997ff;
+            letter-spacing: 3px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        h2 {
+            color: #c5b5ff;
+            font-size: 28px;
+            margin-top: 10px;
+        }
+
+        h3 {
+            color: #a997ff;
+        }
+
+        .reseña {
+            background-color: #252943;
+            border-radius: 15px;
+            padding: 22px;
+            line-height: 1.8;
+            text-align: justify;
+            border-left: 4px solid #9174ee;
+        }
+
+        .titulo-fotos {
+            text-align: center;
+            margin: 30px 0 20px;
+            letter-spacing: 2px;
+        }
+
+        .fotos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 18px;
+            margin-top: 20px;
+        }
+
+        .fotos img {
+            width: 300px;
+            max-width: 100%;
+            height: auto;
+            object-fit: contain;
+            border-radius: 15px;
+            padding: 5px;
+            background: #34375a;
+            border: 1px solid #8070c7;
+            transition: transform 0.3s;
+        }
+
+        .fotos img:hover {
+            transform: scale(1.03);
+        }
+
+        /* Fotos de la segunda canción */
+        .galeria-segunda {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+            max-width: 660px;
+            margin: 25px auto;
+            align-items: start;
+        }
+
+        .galeria-segunda .foto-principal {
+            grid-column: 1 / 3;
+            display: flex;
+            justify-content: center;
+        }
+
+        .galeria-segunda .foto-principal img {
+            width: 300px;
+            max-width: 100%;
+        }
+
+        .galeria-segunda .foto-inferior {
+            display: flex;
+            justify-content: center;
+        }
+
+        .galeria-segunda .foto-inferior img {
+            width: 300px;
+            max-width: 100%;
+        }
+
+        .galeria-segunda img {
+            height: auto;
+            object-fit: contain;
+            border-radius: 15px;
+            padding: 5px;
+            background: #34375a;
+            border: 1px solid #8070c7;
+        }
+
+        .volver {
+            text-align: center;
+            margin: 45px 0;
+        }
+
+        .volver a {
+            display: inline-block;
+            background: #7657d6;
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-weight: bold;
+        }
+
+        .volver a:hover {
+            background: #9278ee;
+        }
+
+        footer {
+            background-color: #1b1e33;
+            border: 1px solid #393d61;
+            color: #b9b5d9;
+            text-align: center;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 12px;
+            }
+
+            .cancion {
+                padding: 18px;
+            }
+
+            header h1 {
+                font-size: 30px;
+            }
+
+            h2 {
+                font-size: 23px;
+            }
+
+            .galeria-segunda {
+                gap: 10px;
+            }
+
+            .galeria-segunda .foto-inferior img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>EUROBLOQUE</h1>
+        <p>Un espacio para escuchar, pensar y descubrir</p>
+    </header>
+
+    <main class="contenedor">
+
+        <!-- CANCIÓN 1 -->
+        <section class="cancion">
+
+            <span class="numero">TRACK 01</span>
+            <h2>Disciplina y amor propio</h2>
+
+            <h3>Reflexión musical</h3>
+
+            <div class="reseña">
+                <p>
+                    Esta composición nos invita a pensar en la importancia de
+                    nuestras decisiones y en la forma en que enfrentamos los
+                    desafíos cotidianos. Nos enseña que tener confianza en
+                    nosotros mismos es un paso necesario para seguir adelante
+                    y alcanzar aquello que nos proponemos.
+                </p>
+
+                <p>
+                    También resalta que las metas requieren dedicación y que
+                    cada pequeño avance cuenta. No siempre será fácil lograr
+                    lo que deseamos, pero mantener una actitud positiva y
+                    aprender de nuestros errores nos permite crecer y adquirir
+                    nuevas experiencias.
+                </p>
+
+                <p>
+                    Lo que podemos aprender de esta canción es que nuestro
+                    progreso depende de la perseverancia, de la manera en que
+                    nos tratamos y de las ganas de seguir mejorando sin
+                    compararnos con los demás.
+                </p>
+            </div>
+
+            <h3 class="titulo-fotos">LETRA DE LA CANCIÓN</h3>
+
+            <div class="fotos">
+                <img src="garcia1.JPEG" alt="Garcia 1">
+                <img src="garcia2.JPEG" alt="Garcia 2">
+            </div>
+
+        </section>
+
+
+        <!-- CANCIÓN 2 -->
+        <section class="cancion">
+
+            <span class="numero">TRACK 02</span>
+            <h2>Se perdieron los códigos</h2>
+
+            <h3>Reflexión musical</h3>
+
+            <div class="reseña">
+                <p>
+                    Por medio de esta canción podemos analizar cómo han cambiado
+                    algunas formas de actuar dentro de la sociedad. Su contenido
+                    nos hace cuestionar si estamos dando la importancia necesaria
+                    a la honestidad, al respeto y a la responsabilidad.
+                </p>
+
+                <p>
+                    Las relaciones con otras personas necesitan comprensión,
+                    confianza y sinceridad. Cuando estos aspectos no se toman
+                    en cuenta, pueden surgir conflictos y dificultades para
+                    entendernos. Por eso es importante pensar antes de actuar
+                    y reconocer cómo nuestras palabras pueden afectar a los demás.
+                </p>
+
+                <p>
+                    El mensaje que interpretamos es que los buenos principios
+                    no deben quedar en el olvido. Practicar valores todos los
+                    días es una manera de aportar a una mejor comunidad y de
+                    demostrar que podemos convivir de forma más consciente.
+                </p>
+            </div>
+
+            <h3 class="titulo-fotos">LETRA DE LA CANCIÓN</h3>
+
+            <div class="galeria-segunda">
+
+                <!-- FOTO 5 ARRIBA Y CENTRADA -->
+                <div class="foto-principal">
+                    <img src="garcia5.JPEG" alt="Garcia 5">
+                </div>
+
+                <!-- FOTOS 6 Y 7 ABAJO -->
+                <div class="foto-inferior">
+                    <img src="garcia6.JPEG" alt="Garcia 6">
+                </div>
+
+                <div class="foto-inferior">
+                    <img src="garcia7.JPEG" alt="Garcia 7">
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <div class="volver">
+        <a href="frames.html">← REGRESAR AL INICIO</a>
+    </div>
+
+    <footer>
+        <p>EUROBLOQUE | La música también tiene algo que decir</p>
+    </footer>
+
+</body>
+</html>
