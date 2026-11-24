@@ -1,0 +1,246 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Solidaria</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7f5;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #168c70, #35b98b);
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 12px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        .introduccion {
+            text-align: center;
+            padding: 30px 20px;
+            max-width: 850px;
+            margin: auto;
+            line-height: 1.7;
+        }
+
+        .introduccion h2 {
+            color: #168c70;
+            margin-bottom: 12px;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(260px, 1fr)
+            );
+            gap: 25px;
+            max-width: 1150px;
+            margin: 20px auto 50px;
+            padding: 20px;
+        }
+
+        .foto {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+            transition: transform 0.3s;
+            text-align: center;
+        }
+
+        .foto:hover {
+            transform: translateY(-7px);
+        }
+
+        .foto img {
+            width: 90%;
+            height: auto;
+            max-height: 400px;
+            object-fit: contain;
+            display: block;
+            margin: 15px auto;
+            border-radius: 10px;
+        }
+
+        .descripcion {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .descripcion h2 {
+            color: #168c70;
+            margin-bottom: 12px;
+            font-size: 22px;
+        }
+
+        .descripcion p {
+            line-height: 1.6;
+            font-size: 15px;
+        }
+
+        footer {
+            background: #168c70;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            .galeria {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>💚 GALERÍA SOLIDARIA</h1>
+        <p>Pequeñas acciones, grandes cambios</p>
+    </header>
+
+    <section class="introduccion">
+        <h2>Bienvenidos a nuestra galería</h2>
+
+        <p>
+            En esta galería compartimos los momentos más especiales
+            de nuestras actividades solidarias. Cada fotografía
+            representa una experiencia de ayuda, unión, compromiso
+            y solidaridad con nuestra comunidad. A través de estas
+            acciones buscamos fomentar valores que nos ayuden a
+            construir una sociedad más humana, respetuosa y unida.
+        </p>
+    </section>
+
+    <main class="galeria">
+
+        <!-- FOTO 1: j2 -->
+        <div class="foto">
+            <img src="j2.jpeg" alt="Actividad del primer día de clases">
+
+            <div class="descripcion">
+                <h2>Actividad 1: Integración del primer día de clases</h2>
+                <p>
+                    Esta actividad se realizó durante el primer día de
+                    clases, promoviendo la integración entre estudiantes
+                    y padres de familia. Fomenta la unión, la convivencia
+                    y el compañerismo, fortaleciendo los lazos entre la
+                    comunidad educativa. Representa valores como el
+                    respeto, la amistad, la participación y el trabajo
+                    en equipo.
+                </p>
+            </div>
+        </div>
+
+        <!-- FOTO 2: j3 -->
+        <div class="foto">
+            <img src="j3.jpeg" alt="Celebración del Día de la Madre">
+
+            <div class="descripcion">
+                <h2>Actividad 2: Celebración del Día de la Madre</h2>
+                <p>
+                    Esta actividad se realizó para homenajear a las
+                    madres y reconocer el amor, esfuerzo y dedicación
+                    que brindan a sus familias. Fomenta el cariño,
+                    la gratitud y la unión familiar. Representa valores
+                    como el amor, el respeto, el agradecimiento y la
+                    solidaridad, recordándonos la importancia de
+                    valorar a quienes nos cuidan y apoyan.
+                </p>
+            </div>
+        </div>
+
+        <!-- FOTO 3: j5 -->
+        <div class="foto">
+            <img src="j5.jpeg" alt="Plantación de rosas en la institución">
+
+            <div class="descripcion">
+                <h2>Actividad 3: Plantando rosas en nuestra institución</h2>
+                <p>
+                    En esta actividad sembramos rosas dentro de nuestra
+                    institución con el propósito de embellecer sus
+                    espacios y crear un ambiente más agradable.
+                    Fomenta el cuidado del medio ambiente, la
+                    responsabilidad y el trabajo en equipo.
+                    Representa valores como el compromiso, el respeto
+                    por la naturaleza, la cooperación y el amor por
+                    nuestra institución.
+                </p>
+            </div>
+        </div>
+
+        <!-- FOTO 4: j4 -->
+        <div class="foto">
+            <img src="j4.jpeg" alt="Preparación de canastas de víveres">
+
+            <div class="descripcion">
+                <h2>Actividad 4: Armando canastas de víveres</h2>
+                <p>
+                    En esta actividad organizamos y preparamos canastas
+                    de víveres destinadas a personas y familias que
+                    necesitan ayuda. Fomenta la generosidad, la empatía
+                    y el compromiso con quienes más lo necesitan.
+                    Representa valores como la solidaridad, la
+                    colaboración, la bondad y el servicio a los demás,
+                    enseñándonos que compartir también es una forma
+                    de demostrar amor.
+                </p>
+            </div>
+        </div>
+
+        <!-- FOTO 5: j1 -->
+        <div class="foto">
+            <img src="j1.jpeg" alt="Entrega de canastas de víveres">
+
+            <div class="descripcion">
+                <h2>Actividad 5: Entrega de canastas solidarias</h2>
+                <p>
+                    Como parte final de nuestra labor solidaria,
+                    realizamos la entrega de las canastas de víveres
+                    a las personas necesitadas. Esta acción fomenta
+                    la ayuda desinteresada, la empatía y el compromiso
+                    social. Representa valores como la generosidad,
+                    la humildad, el respeto y la solidaridad,
+                    demostrando que con pequeñas acciones podemos
+                    brindar esperanza y alegría a quienes más lo
+                    necesitan.
+                </p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>💚 GALERÍA SOLIDARIA</p>
+        <p>Compartiendo amor, unión y solidaridad</p>
+    </footer>
+
+</body>
+</html>
