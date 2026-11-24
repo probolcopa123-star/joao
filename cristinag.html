@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galería Solidaria</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eef4fa;
+    color: #24364b;
+}
+
+header {
+    background: linear-gradient(135deg, #123456, #2878a8);
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+header h1 {
+    font-size: 38px;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 17px;
+}
+
+.galeria {
+    max-width: 1100px;
+    margin: auto;
+    padding: 35px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.foto {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px #12345625;
+    transition: transform 0.3s;
+}
+
+.foto:hover {
+    transform: translateY(-6px);
+}
+
+.foto img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.contenido {
+    padding: 18px;
+}
+
+.contenido h2 {
+    color: #17618b;
+    margin-top: 0;
+}
+
+.contenido p {
+    color: #526477;
+    line-height: 1.6;
+}
+
+footer {
+    background: #123456;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 29px;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>GALERÍA SOLIDARIA</h1>
+    <p>Pequeñas acciones que generan grandes cambios</p>
+</header>
+
+<section class="galeria">
+
+    <!-- FOTO C1 -->
+    <div class="foto">
+        <img src="C1.jpeg" alt="Plantación de rosas">
+        <div class="contenido">
+            <h2>Actividad 1: Plantación de rosas</h2>
+            <p>
+                Realizamos la plantación de rosas en nuestra institución
+                con el propósito de embellecer sus espacios y crear un
+                ambiente más agradable. Esta actividad fomenta el cuidado
+                del medio ambiente, la responsabilidad y el trabajo en
+                equipo. Representa valores como el respeto por la
+                naturaleza, el compromiso, la cooperación y el amor
+                por nuestra institución.
+            </p>
+        </div>
+    </div>
+
+    <!-- FOTO C2 -->
+    <div class="foto">
+        <img src="C2.jpeg" alt="Armado de canastas solidarias">
+        <div class="contenido">
+            <h2>Actividad 2: Armado de canastas solidarias</h2>
+            <p>
+                En esta actividad nos organizamos para preparar canastas
+                de víveres destinadas a familias que necesitan apoyo.
+                Fomenta la generosidad, la empatía y la colaboración
+                entre compañeros. Representa valores como la solidaridad,
+                la unión, la responsabilidad y el servicio a los demás,
+                enseñándonos la importancia de compartir con quienes
+                más lo necesitan.
+            </p>
+        </div>
+    </div>
+
+    <!-- FOTO C3 -->
+    <div class="foto">
+        <img src="C3.jpeg" alt="Preparativos para la entrega de canastas">
+        <div class="contenido">
+            <h2>Actividad 3: Preparativos para la entrega</h2>
+            <p>
+                Antes de realizar la entrega, organizamos y revisamos
+                los últimos detalles de las canastas para asegurarnos
+                de que todo estuviera listo. Esta actividad fomenta
+                la planificación, la organización y el trabajo en
+                equipo. Representa valores como la responsabilidad,
+                el compromiso, la cooperación y la dedicación,
+                demostrando que cada pequeño esfuerzo es importante
+                para ayudar a los demás.
+            </p>
+        </div>
+    </div>
+
+    <!-- FOTO C4 -->
+    <div class="foto">
+        <img src="C4.jpeg" alt="Entrega de canastas de víveres">
+        <div class="contenido">
+            <h2>Actividad 4: Entrega de canastas solidarias</h2>
+            <p>
+                Finalmente, realizamos la entrega de las canastas
+                de víveres a personas y familias necesitadas,
+                compartiendo con ellas una muestra de apoyo y cariño.
+                Esta actividad fomenta la empatía, la generosidad
+                y el compromiso social. Representa valores como
+                la solidaridad, la humildad, el respeto y la bondad,
+                recordándonos que ayudar a los demás puede generar
+                grandes cambios en nuestra comunidad.
+            </p>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    <p>Galería Solidaria © 2026</p>
+    <p>Juntos podemos construir un mundo mejor.</p>
+</footer>
+
+</body>
+</html>
